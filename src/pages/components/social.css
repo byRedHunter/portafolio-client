@@ -1,0 +1,22 @@
+.social {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	column-gap: 1.5rem;
+}
+.social .social-item {
+	height: 4rem;
+	width: 4rem;
+	background: var(--color-primary);
+	border-radius: 50%;
+	box-shadow: 0 0 1rem 0 var(--color-primary-50);
+}
+.social-item a {
+	height: 100%;
+	width: 100%;
+}
+.social-item svg {
+	height: 2rem;
+	width: 2rem;
+}

@@ -1,0 +1,20 @@
+.nav {
+	display: grid;
+	row-gap: 1.5rem;
+}
+.nav-item {
+	width: 100%;
+}
+.nav-item a {
+	display: flex;
+	color: var(--color-dark);
+	transition: 0.3s linear;
+}
+.nav-item a:hover svg {
+	transform: scale(1.2);
+}
+.nav-item a svg {
+	height: 2rem;
+	transform-origin: center;
+	transition: 0.3s linear;
+}
