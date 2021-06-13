@@ -1,10 +1,6 @@
 import React from 'react'
-import { Menu } from './pages/components/Menu'
+import { MainRoute } from './routes/MainRoute'
 
 export const App = () => {
-	return (
-		<>
-			<Menu />
-		</>
-	)
+	return <MainRoute />
 }
