@@ -4,9 +4,11 @@ import { Link } from 'react-router-dom'
 import Perfil from '../../images/perfil.png'
 import './sidebar.css'
 
+import { useInterface } from '../../store/useInterface'
+
 import { Social } from './Social'
 import { MenuNav } from './MenuNav'
-import { useInterface } from '../../store/useInterface'
+import { Config } from './Config'
 
 export const Sidebar = () => {
 	const { sidebarActive } = useInterface((state) => state)
@@ -32,6 +34,8 @@ export const Sidebar = () => {
 			<Social />
 
 			<MenuNav />
+
+			<Config />
 		</header>
 	)
 }

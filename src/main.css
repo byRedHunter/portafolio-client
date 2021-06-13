@@ -65,3 +65,8 @@ a {
 ul {
 	list-style: none;
 }
+
+.item-center {
+	display: grid;
+	place-items: center;
+}

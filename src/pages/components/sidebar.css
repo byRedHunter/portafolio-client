@@ -41,7 +41,7 @@
 	left: 0;
 }
 .header-cv span {
-	color: var(--color-light);
+	color: #fbfbfb;
 	font-weight: var(--font-500);
 	font-size: 1.4rem;
 	margin-left: -3.5rem;
@@ -69,4 +69,8 @@
 .header-info-title {
 	font-size: 2rem;
 	color: var(--color-secondary);
+}
+.header-info-desc {
+	text-align: center;
+	font-size: 1.4rem;
 }
