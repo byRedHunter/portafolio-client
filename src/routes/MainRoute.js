@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom'
 
 import { Sidebar } from '../pages/components/Sidebar'
+import { Menu } from '../pages/components/Menu'
 import { Home } from '../pages/home/Home'
 import { Contact } from '../pages/contact/Contact'
 import { Portfolio } from '../pages/portfolio/Portfolio'
@@ -18,7 +19,7 @@ export const MainRoute = () => {
 		<Router>
 			<Sidebar />
 
-			<div>
+			<main className='main'>
 				<Switch>
 					<Route exact path='/' component={Home} />
 					<Route path='/contact' component={Contact} />
@@ -27,7 +28,9 @@ export const MainRoute = () => {
 					<Route path='/youtube' component={Youtube} />
 					<Redirect to='/' />
 				</Switch>
-			</div>
+			</main>
+
+			<Menu />
 		</Router>
 	)
 }

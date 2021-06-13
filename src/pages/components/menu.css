@@ -1,0 +1,24 @@
+.menu-icon {
+	position: fixed;
+	bottom: 2rem;
+	right: 2rem;
+	height: 5rem;
+	width: 5rem;
+	background: var(--color-primary);
+	border-radius: 50%;
+	box-shadow: 0 0 1rem 0 var(--color-dark-50);
+	display: grid;
+	place-items: center;
+	cursor: pointer;
+	z-index: 10;
+}
+.menu-icon svg {
+	height: 3rem;
+	width: 3rem;
+	fill: var(--color-light);
+}
+@media screen and (min-width: 800px) {
+	.menu-icon {
+		display: none;
+	}
+}

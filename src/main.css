@@ -24,9 +24,12 @@ html {
 	--font-800: 800;
 
 	--color-primary: #5f3899;
+	--color-primary-50: rgba(95, 56, 153, 0.5);
 	--color-secondary: #ff5200;
 	--color-dark: #101010;
+	--color-dark-50: rgba(16, 16, 16, 0.5);
 	--color-bg: #e6e7fa;
+	--color-bg-sidebar: #efeffb;
 	--color-light: #fbfbfb;
 }
 
@@ -41,8 +44,8 @@ html {
 ::-webkit-scrollbar-thumb {
 	background: linear-gradient(
 		125deg,
-		var(--color-secondary),
-		var(--color-dark)
+		var(--color-primary-50),
+		var(--color-dark-50)
 	);
 	border-radius: 0.5rem;
 }
@@ -53,4 +56,12 @@ body {
 	background: var(--color-bg);
 	color: var(--color-dark);
 	font-weight: var(--font-300);
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
 }
