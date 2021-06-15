@@ -83,6 +83,13 @@ ul {
 .text-secondary {
 	color: var(--color-secondary);
 }
+.text-link {
+	text-decoration: none;
+	transition: 0.2s ease-in;
+}
+.text-link:hover {
+	text-decoration: underline;
+}
 
 .title {
 	display: flex;
@@ -109,4 +116,22 @@ ul {
 		padding-bottom: 4rem;
 		overflow-x: hidden;
 	}
+}
+
+.button {
+	background: var(--color-secondary);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 1.5rem;
+	padding: 0.8rem 2rem;
+	outline: none;
+	cursor: pointer;
+	color: #fbfbfb;
+	border-radius: 0.5rem;
+	font-weight: var(--font-500);
+	max-width: 25rem;
+}
+.button-primary {
+	background: var(--color-primary);
 }
