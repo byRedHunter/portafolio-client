@@ -3,7 +3,7 @@ import { combine, devtools } from 'zustand/middleware'
 
 export const useInterface = create(
 	devtools(
-		combine({ sidebarActive: false, darkMode: true }, (set) => ({
+		combine({ sidebarActive: false, darkMode: false }, (set) => ({
 			toggleSidebar: () =>
 				set((state) => ({ ...state, sidebarActive: !state.sidebarActive })),
 
