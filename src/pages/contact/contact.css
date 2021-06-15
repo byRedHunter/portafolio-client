@@ -1,0 +1,38 @@
+.contact {
+	margin-bottom: 16rem;
+}
+.contact .social {
+	margin: 6rem 0;
+}
+.contact-info {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 4rem;
+}
+.contact-info p.phone-number::after {
+	content: '+51 995 807 872';
+	color: var(--color-secondary);
+	font-weight: var(--font-500);
+	margin-left: 0.5rem;
+	font-weight: var(--font-600);
+}
+.contact-info-content p {
+	margin-top: 1.5rem;
+}
+@media screen and (min-width: 600px) {
+	.contact-info-content {
+		width: 45%;
+	}
+}
+@media screen and (min-width: 800px) {
+	.contact-info-content {
+		width: 100%;
+	}
+}
+@media screen and (min-width: 900px) {
+	.contact-info-content {
+		width: 45%;
+	}
+}

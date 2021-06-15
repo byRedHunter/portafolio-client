@@ -77,6 +77,12 @@ ul {
 .text-bold {
 	font-weight: var(--font-600);
 }
+.text-primary {
+	color: var(--color-primary);
+}
+.text-secondary {
+	color: var(--color-secondary);
+}
 
 .title {
 	display: flex;
