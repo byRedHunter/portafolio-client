@@ -11,36 +11,52 @@ import Portfolio from './svg/Portfolio'
 import { useInterface } from '../../store/useInterface'
 
 export const MenuNav = () => {
-	const { darkMode } = useInterface((state) => state)
+	const { darkMode, closeSidebar } = useInterface((state) => state)
 
 	return (
 		<nav className='nav'>
 			<div className='nav-item'>
-				<Link to='/' className='item-center'>
+				<Link to='/' className='item-center' onClick={() => closeSidebar()}>
 					<About fill={darkMode ? '#ff5200' : '#9f5eff'} />
 					Sobre Mi
 				</Link>
 			</div>
 			<div className='nav-item'>
-				<Link to='/resumen' className='item-center'>
+				<Link
+					to='/resumen'
+					className='item-center'
+					onClick={() => closeSidebar()}
+				>
 					<Resumen fill={darkMode ? '#ff5200' : '#9f5eff'} />
 					Resumen
 				</Link>
 			</div>
 			<div className='nav-item'>
-				<Link to='/portfolio' className='item-center'>
+				<Link
+					to='/portfolio'
+					className='item-center'
+					onClick={() => closeSidebar()}
+				>
 					<Portfolio fill={darkMode ? '#ff5200' : '#9f5eff'} />
 					Portafolio
 				</Link>
 			</div>
 			<div className='nav-item'>
-				<Link to='/youtube' className='item-center'>
+				<Link
+					to='/youtube'
+					className='item-center'
+					onClick={() => closeSidebar()}
+				>
 					<YouTube fill={darkMode ? '#ff5200' : '#9f5eff'} />
 					YouTube
 				</Link>
 			</div>
 			<div className='nav-item'>
-				<Link to='/contact' className='item-center'>
+				<Link
+					to='/contact'
+					className='item-center'
+					onClick={() => closeSidebar()}
+				>
 					<Contact fill={darkMode ? '#ff5200' : '#9f5eff'} />
 					Contacto
 				</Link>

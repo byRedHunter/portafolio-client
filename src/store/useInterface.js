@@ -7,6 +7,8 @@ export const useInterface = create(
 			toggleSidebar: () =>
 				set((state) => ({ ...state, sidebarActive: !state.sidebarActive })),
 
+			closeSidebar: () => set((state) => ({ ...state, sidebarActive: false })),
+
 			toggleTheme: () =>
 				set((state) => ({ ...state, darkMode: !state.darkMode })),
 		}))
