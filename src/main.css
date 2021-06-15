@@ -70,3 +70,37 @@ ul {
 	display: grid;
 	place-items: center;
 }
+
+.text-center {
+	text-align: center;
+}
+.text-bold {
+	font-weight: var(--font-600);
+}
+
+.title {
+	display: flex;
+	align-items: center;
+	column-gap: 0.5rem;
+	margin: 2rem 0;
+}
+.title span {
+	color: var(--color-secondary);
+	font-size: 3.5rem;
+}
+
+.main {
+	position: relative;
+	padding: 2rem 5%;
+	width: 100%;
+	min-height: 100vh;
+}
+@media screen and (min-width: 800px) {
+	.main {
+		margin-left: 32rem;
+		width: auto;
+		padding-top: 4rem;
+		padding-bottom: 4rem;
+		overflow-x: hidden;
+	}
+}

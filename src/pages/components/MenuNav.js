@@ -22,25 +22,25 @@ export const MenuNav = () => {
 				</Link>
 			</div>
 			<div className='nav-item'>
-				<Link to='/' className='item-center'>
+				<Link to='/resumen' className='item-center'>
 					<Resumen fill={darkMode ? '#ff5200' : '#9f5eff'} />
 					Resumen
 				</Link>
 			</div>
 			<div className='nav-item'>
-				<Link to='/' className='item-center'>
+				<Link to='/portfolio' className='item-center'>
 					<Portfolio fill={darkMode ? '#ff5200' : '#9f5eff'} />
 					Portafolio
 				</Link>
 			</div>
 			<div className='nav-item'>
-				<Link to='/' className='item-center'>
+				<Link to='/youtube' className='item-center'>
 					<YouTube fill={darkMode ? '#ff5200' : '#9f5eff'} />
 					YouTube
 				</Link>
 			</div>
 			<div className='nav-item'>
-				<Link to='/' className='item-center'>
+				<Link to='/contact' className='item-center'>
 					<Contact fill={darkMode ? '#ff5200' : '#9f5eff'} />
 					Contacto
 				</Link>

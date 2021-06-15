@@ -1,5 +1,12 @@
 import React from 'react'
 
+import { Footer } from '../components/Footer'
+
 export const Contact = () => {
-	return <div>contact work</div>
+	return (
+		<>
+			<section className='contact'>contact work</section>
+			<Footer />
+		</>
+	)
 }
