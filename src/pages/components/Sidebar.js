@@ -27,7 +27,7 @@ export const Sidebar = () => {
 
 				<p className='header-info-desc'>
 					Hola, soy Frontend Developer, te doy la bienvenida a mi sitio web
-					personal, echa un vistazo a mis proyectos, espro lo disfrutes.
+					personal, echa un vistazo a mis proyectos, espero lo disfrutes.
 				</p>
 			</div>
 

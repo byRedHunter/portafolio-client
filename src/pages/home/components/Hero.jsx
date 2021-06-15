@@ -18,9 +18,9 @@ export const Hero = () => {
 				aprendido, es por ello que suelo compartir contenido en{' '}
 				<span className='text-secondary text-bold'>YouTube</span>. A futuro
 				quiero aprender a desarrollar{' '}
-				<span className='text-secondary text-bold'>aplicaciones movil</span> y{' '}
-				<span className='text-secondary text-bold'>python</span> que me llama
-				mucho la ateción.
+				<span className='text-secondary text-bold'>aplicaciones móvil</span> y{' '}
+				<span className='text-secondary text-bold'>Python</span> que me llama
+				mucho la atención.
 			</p>
 
 			<div className='hero-desc'>
@@ -30,13 +30,14 @@ export const Hero = () => {
 				Puedes ver mi{' '}
 				<span className='text-secondary text-bold'>portafolio</span> de
 				proyectos o mi{' '}
-				<span className='text-secondary text-bold'>resumen en linea</span>.
+				<span className='text-secondary text-bold'>resumen en línea</span>.
 			</div>
 
 			<div className='hero-links'>
 				<Link to='/portfolio' className='button button-primary'>
 					<Send /> Ver Portafolio
 				</Link>
+
 				<Link to='/resumen' className='button'>
 					<Resumen fill={'#fbfbfb'} /> Ver Resumen
 				</Link>

@@ -8,8 +8,8 @@ export const Skills = () => {
 			</h2>
 
 			<p className='section-description'>
-				A demás de la tecnologías que manejo, también cuento con las siguientes
-				habilidades ya que no todo es programar, la comunicación o la empatia
+				A demás de las tecnologías que manejo, también cuento con las siguientes
+				habilidades ya que no todo es programar, la comunicación o la empatía
 				con las personas es fundamental.
 			</p>
 

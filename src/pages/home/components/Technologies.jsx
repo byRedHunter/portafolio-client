@@ -10,8 +10,8 @@ export const Technologies = () => {
 
 			<p className='section-description'>
 				Me encuentro en constante aprendizaje, me considero una persona
-				autodidacta y me gusta mucho desarrollar aplicaciones. A continuación
-				podras apreciar una lista de las principales habilidades técnicas y
+				autodidacta y me gusta mucho desarrollar aplicaciones. A continuación,
+				podrás apreciar una lista de las principales habilidades técnicas y
 				tecnologías que utilizo. ¿Quieres saber más sobre mi experiencia? Puedes
 				consultar mi{' '}
 				<Link to='/resumen' className='text-secondary text-bold text-link'>
