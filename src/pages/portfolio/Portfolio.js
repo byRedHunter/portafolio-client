@@ -3,7 +3,7 @@ import React from 'react'
 import { Filtro } from './components/Filtro'
 import { Works } from './components/Works'
 
-export const Portfolio = () => {
+const Portfolio = () => {
 	return (
 		<section className='portfolio'>
 			<h2 className='title'>
@@ -29,3 +29,5 @@ export const Portfolio = () => {
 		</section>
 	)
 }
+
+export default Portfolio

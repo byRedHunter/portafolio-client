@@ -6,7 +6,7 @@ import { Hero } from './components/Hero'
 import { Technologies } from './components/Technologies'
 import { Skills } from './components/Skills'
 
-export const Home = () => {
+const Home = () => {
 	return (
 		<>
 			<Hero />
@@ -15,3 +15,5 @@ export const Home = () => {
 		</>
 	)
 }
+
+export default Home

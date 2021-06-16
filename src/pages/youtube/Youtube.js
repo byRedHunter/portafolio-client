@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Youtube = () => {
+const Youtube = () => {
 	return (
 		<section className='youtube'>
 			<h2 className='title'>
@@ -26,3 +26,5 @@ export const Youtube = () => {
 		</section>
 	)
 }
+
+export default Youtube

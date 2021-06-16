@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Resumen = () => {
+const Resumen = () => {
 	return (
 		<section className='resumen'>
 			<h2 className='title'>
@@ -15,3 +15,5 @@ export const Resumen = () => {
 		</section>
 	)
 }
+
+export default Resumen
