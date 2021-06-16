@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+import { ListTechs } from './ListTechs'
+
 export const Technologies = () => {
 	return (
 		<section className='technologies'>
@@ -23,6 +25,8 @@ export const Technologies = () => {
 				</Link>
 				.
 			</p>
+
+			<ListTechs />
 		</section>
 	)
 }

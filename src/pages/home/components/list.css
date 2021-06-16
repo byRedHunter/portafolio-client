@@ -1,0 +1,55 @@
+.techs {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 6rem;
+	row-gap: 4rem;
+	justify-content: space-between;
+}
+.tech {
+	width: 100%;
+}
+.tech-icons {
+	display: flex;
+	align-items: center;
+	column-gap: 2rem;
+}
+.tech-icons svg {
+	height: 4rem;
+}
+.tech-icons svg.express-logo {
+	height: 3.5rem;
+}
+.tech-icons svg.mysql-logo {
+	filter: drop-shadow(0 0 0.3rem var(--color-dark-50));
+}
+.tech-title {
+	margin: 1rem 0;
+}
+.tech-desc span.sass {
+	color: #bf6b97;
+}
+.tech-desc span.bootstrap {
+	color: #9f5eff;
+}
+.tech-desc span.react {
+	color: #62d4fa;
+}
+.tech-desc span.angular {
+	color: #ca3327;
+}
+@media screen and (min-width: 600px) {
+	.tech {
+		width: 48%;
+	}
+}
+@media screen and (min-width: 800px) {
+	.tech {
+		width: 100%;
+	}
+}
+@media screen and (min-width: 950px) {
+	.tech {
+		width: 48%;
+	}
+}
