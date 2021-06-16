@@ -6,6 +6,7 @@
 /* hero */
 .hero {
 	padding: 4rem 0;
+	position: relative;
 }
 .hero-title {
 	text-transform: uppercase;
@@ -29,6 +30,9 @@
 	gap: 3rem;
 	justify-content: flex-start;
 }
+.hero .svg {
+	display: none;
+}
 @media screen and (min-width: 500px) {
 	.hero-title {
 		font-size: 3rem;
@@ -49,6 +53,49 @@
 	}
 	.hero-links {
 		margin-top: 8rem;
+	}
+	.hero .svg {
+		position: absolute;
+		display: flex;
+		height: 8rem;
+		transition: 0.3s linear;
+	}
+	.hero .svg-tech {
+		bottom: 0;
+		right: 5%;
+		height: 15rem;
+		animation: animate 1.5s linear infinite;
+	}
+	.hero .svg-code {
+		top: 2%;
+		right: -4%;
+		animation: animate 1s ease infinite;
+	}
+
+	@keyframes animate {
+		0%,
+		100% {
+			transform: translateY(-2px);
+		}
+		50% {
+			transform: translateY(2px);
+		}
+	}
+	.hero .svg-favicon {
+		top: 50%;
+		transform: translateY(-50%) rotate(15deg);
+		right: -15%;
+		height: 15rem;
+		animation: favicon 1.8s ease infinite;
+	}
+	@keyframes favicon {
+		0%,
+		100% {
+			transform: translateY(-48%) rotate(14deg);
+		}
+		50% {
+			transform: translateY(-50%) rotate(15deg);
+		}
 	}
 }
 /* hero */

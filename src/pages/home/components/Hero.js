@@ -1,6 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+import Code from '../../components/svg/Code'
+import Tech from '../../components/svg/Tech'
+import Favicon from '../../components/svg/Favicon'
+
 import Resumen from '../../components/svg/Resumen'
 import Send from '../../components/svg/Send'
 
@@ -42,6 +46,10 @@ export const Hero = () => {
 					<Resumen fill={'#fbfbfb'} /> Ver Resumen
 				</Link>
 			</div>
+
+			<Code className='svg svg-code' />
+			<Favicon className='svg svg-favicon' />
+			<Tech className='svg svg-tech' />
 		</section>
 	)
 }
