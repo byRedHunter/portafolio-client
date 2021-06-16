@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Suspense, lazy } from 'react'
 import {
 	BrowserRouter as Router,
 	Switch,
@@ -8,29 +8,32 @@ import {
 
 import { Sidebar } from '../pages/components/Sidebar'
 import { Menu } from '../pages/components/Menu'
-import { Home } from '../pages/home/Home'
-import { Contact } from '../pages/contact/Contact'
-import { Portfolio } from '../pages/portfolio/Portfolio'
-import { Resumen } from '../pages/resumen/Resumen'
-import { Youtube } from '../pages/youtube/Youtube'
+
+const Home = lazy(() => import('../pages/home/Home'))
+const Contact = lazy(() => import('../pages/contact/Contact'))
+const Portfolio = lazy(() => import('../pages/portfolio/Portfolio'))
+const Resumen = lazy(() => import('../pages/resumen/Resumen'))
+const Youtube = lazy(() => import('../pages/youtube/Youtube'))
 
 export const MainRoute = () => {
 	return (
 		<Router>
-			<Sidebar />
+			<Suspense fallback={<div>Loading...</div>}>
+				<Sidebar />
 
-			<main className='main'>
-				<Switch>
-					<Route exact path='/' component={Home} />
-					<Route path='/contact' component={Contact} />
-					<Route path='/portfolio' component={Portfolio} />
-					<Route path='/resumen' component={Resumen} />
-					<Route path='/youtube' component={Youtube} />
-					<Redirect to='/' />
-				</Switch>
-			</main>
+				<main className='main'>
+					<Switch>
+						<Route exact path='/' component={Home} />
+						<Route path='/contact' component={Contact} />
+						<Route path='/portfolio' component={Portfolio} />
+						<Route path='/resumen' component={Resumen} />
+						<Route path='/youtube' component={Youtube} />
+						<Redirect to='/' />
+					</Switch>
+				</main>
 
-			<Menu />
+				<Menu />
+			</Suspense>
 		</Router>
 	)
 }

@@ -5,7 +5,7 @@ import './contact.css'
 import { Social } from '../components/Social'
 import { Footer } from '../components/Footer'
 
-export const Contact = () => {
+const Contact = () => {
 	return (
 		<>
 			<section className='contact'>
@@ -63,3 +63,5 @@ export const Contact = () => {
 		</>
 	)
 }
+
+export default Contact
