@@ -131,6 +131,7 @@ ul {
 	border-radius: 0.5rem;
 	font-weight: var(--font-500);
 	max-width: 25rem;
+	border: none;
 }
 .button-primary {
 	background: var(--color-primary);

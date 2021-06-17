@@ -1,5 +1,9 @@
 import React from 'react'
 
+import './youtube.css'
+
+import { Videos } from './components/Videos'
+
 const Youtube = () => {
 	return (
 		<section className='youtube'>
@@ -23,6 +27,14 @@ const Youtube = () => {
 				</a>{' '}
 				para que puedas visitar el canal. .
 			</p>
+
+			<Videos />
+
+			<div className='youtube-action'>
+				<button className='button button-primary button-youtube'>
+					Ver más
+				</button>
+			</div>
 		</section>
 	)
 }

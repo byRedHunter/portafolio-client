@@ -1,0 +1,96 @@
+.videos {
+	margin: 6rem 0;
+	width: 100%;
+	display: grid;
+	grid-template: auto / 1fr;
+	row-gap: 4rem;
+}
+.video {
+	width: 100%;
+	background: var(--color-light);
+	overflow: hidden;
+	border-radius: 0.8rem;
+	box-shadow: 0.1rem 0.2rem 1.5rem 0 var(--color-primary-50);
+	animation: showCard 1s ease-in;
+	transform-origin: center;
+}
+@keyframes showCard {
+	from {
+		transform: scale(1);
+		opacity: 0;
+	}
+	to {
+		transform: scale(1);
+	}
+}
+.video-header {
+	width: 100%;
+	height: 20rem;
+}
+.video-header img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+.video-content {
+	padding: 3rem 2rem;
+}
+.video-content h4 {
+	margin-bottom: 1rem;
+	font-size: 2rem;
+	color: var(--color-secondary);
+}
+.video-link {
+	height: 5rem;
+	width: 100%;
+}
+.video-link a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	line-height: 5rem;
+	transition: 0.3s linear;
+	color: #f9f9f9;
+}
+.video-link a:hover {
+	background: var(--color-primary);
+}
+.button-youtube {
+	width: 20rem;
+	height: 4.5rem;
+	margin: 0 auto;
+}
+@media screen and (min-width: 450px) {
+	.video-header {
+		height: 25rem;
+	}
+}
+@media screen and (min-width: 700px) {
+	.videos {
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 4rem;
+	}
+	.video-header {
+		height: 20rem;
+	}
+}
+@media screen and (min-width: 800px) {
+	.videos {
+		grid-template-columns: 1fr;
+	}
+}
+@media screen and (min-width: 900px) {
+	.video-header {
+		height: 25rem;
+	}
+}
+@media screen and (min-width: 1100px) {
+	.videos {
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 4rem;
+	}
+	.video-header {
+		height: 20rem;
+	}
+}

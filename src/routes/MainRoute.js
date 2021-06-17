@@ -19,10 +19,10 @@ const Youtube = lazy(() => import('../pages/youtube/Youtube'))
 export const MainRoute = () => {
 	return (
 		<Router>
-			<Suspense fallback={<Loading />}>
-				<Sidebar />
+			<Sidebar />
 
-				<main className='main'>
+			<main className='main'>
+				<Suspense fallback={<Loading />}>
 					<Switch>
 						<Route exact path='/' component={Home} />
 						<Route path='/contact' component={Contact} />
@@ -31,10 +31,10 @@ export const MainRoute = () => {
 						<Route path='/youtube' component={Youtube} />
 						<Redirect to='/' />
 					</Switch>
-				</main>
+				</Suspense>
+			</main>
 
-				<Menu />
-			</Suspense>
+			<Menu />
 		</Router>
 	)
 }
