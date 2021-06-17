@@ -8,6 +8,7 @@ import {
 
 import { Sidebar } from '../pages/components/Sidebar'
 import { Menu } from '../pages/components/Menu'
+import { Loading } from '../pages/components/Loading'
 
 const Home = lazy(() => import('../pages/home/Home'))
 const Contact = lazy(() => import('../pages/contact/Contact'))
@@ -18,7 +19,7 @@ const Youtube = lazy(() => import('../pages/youtube/Youtube'))
 export const MainRoute = () => {
 	return (
 		<Router>
-			<Suspense fallback={<div>Loading...</div>}>
+			<Suspense fallback={<Loading />}>
 				<Sidebar />
 
 				<main className='main'>
