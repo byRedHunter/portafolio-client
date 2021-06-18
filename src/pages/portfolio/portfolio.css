@@ -1,0 +1,22 @@
+.filter {
+	margin: 4rem 0;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-evenly;
+	gap: 1rem;
+	background: var(--color-primary);
+	padding: 1rem;
+	border-radius: 0.5rem;
+}
+.filter-item {
+	padding: 0.8rem 1.5rem;
+	cursor: pointer;
+	color: #fbfbfb;
+	transition: 0.3s linear;
+	border-bottom: 0.3rem solid transparent;
+}
+.filter-item.active {
+	font-weight: var(--font-500);
+	border-bottom: 0.3rem solid #fbfbfb;
+}

@@ -1,5 +1,7 @@
 import React from 'react'
 
+import './portfolio.css'
+
 import { Filtro } from './components/Filtro'
 import { Works } from './components/Works'
 
