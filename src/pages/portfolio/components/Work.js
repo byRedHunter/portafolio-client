@@ -1,4 +1,6 @@
 import React from 'react'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
+import 'react-lazy-load-image-component/src/effects/blur.css'
 
 import Send from '../../components/svg/Send'
 import GitHub from '../../components/svg/GitHub'
@@ -7,7 +9,14 @@ export const Work = ({ work }) => {
 	return (
 		<article className='work'>
 			<figure className='work-figure'>
-				<img src={work.image} alt={work.title} />
+				<LazyLoadImage
+					effect='blur'
+					src={work.image}
+					alt={work.title}
+					height='100%'
+					width='100%'
+					style={{ objectFit: 'cover' }}
+				/>
 			</figure>
 
 			<div className='work-header'>
