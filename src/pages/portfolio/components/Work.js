@@ -16,6 +16,7 @@ export const Work = ({ work }) => {
 					height='100%'
 					width='100%'
 					style={{ objectFit: 'cover' }}
+					placeholderSrc={process.env.PUBLIC_URL + '/placeholder.svg'}
 				/>
 			</figure>
 
