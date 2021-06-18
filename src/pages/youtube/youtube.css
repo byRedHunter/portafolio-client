@@ -14,15 +14,6 @@
 	animation: showCard 1s ease-in;
 	transform-origin: center;
 }
-@keyframes showCard {
-	from {
-		transform: scale(1);
-		opacity: 0;
-	}
-	to {
-		transform: scale(1);
-	}
-}
 .video-header {
 	width: 100%;
 	height: 20rem;
@@ -55,11 +46,6 @@
 }
 .video-link a:hover {
 	background: var(--color-primary);
-}
-.button-youtube {
-	width: 20rem;
-	height: 4.5rem;
-	margin: 0 auto;
 }
 @media screen and (min-width: 450px) {
 	.video-header {

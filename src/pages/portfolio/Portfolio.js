@@ -26,8 +26,16 @@ const Portfolio = () => {
 				</a>
 				.
 			</p>
+
 			<Filtro />
+
 			<Works />
+
+			<div className='youtube-action'>
+				<button className='button button-primary button-youtube'>
+					Ver más
+				</button>
+			</div>
 		</section>
 	)
 }
