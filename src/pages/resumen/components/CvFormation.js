@@ -11,21 +11,21 @@ export const CvFormation = () => {
 			<h2 className='cv__title'>Formación Profesional</h2>
 
 			<div className='formation__container'>
-				<div class='formation'>
-					<div class='formation__header'>
+				<div className='formation'>
+					<div className='formation__header'>
 						<Undc />
 						<h3>Universidad Nacional de Cañete</h3>
 					</div>
 
-					<div class='formation__body'>
-						<p class='body__info'>
+					<div className='formation__body'>
+						<p className='body__info'>
 							Me encuentro estudiando la carrera de{' '}
 							<span>Ingeniería de Sistemas</span>.
 						</p>
 
-						<div class='h4'>Mis logros</div>
+						<div className='h4'>Mis logros</div>
 
-						<ul class='logros'>
+						<ul className='logros'>
 							<li>
 								<span>✔</span> Fundamentos de programación
 							</li>
@@ -39,23 +39,23 @@ export const CvFormation = () => {
 					</div>
 				</div>
 
-				<div class='formation'>
-					<div class='formation__header'>
+				<div className='formation'>
+					<div className='formation__header'>
 						<Platzi />
 
 						<Udemy />
 						<h3>Platzi & Udemy</h3>
 					</div>
 
-					<div class='formation__body'>
-						<p class='body__info'>
+					<div className='formation__body'>
+						<p className='body__info'>
 							Llevo el camino de <span>Frontend</span> y desarrollo{' '}
 							<span>backend</span> con <span>JavaScript</span>.
 						</p>
 
-						<div class='h4'>Mis logros</div>
+						<div className='h4'>Mis logros</div>
 
-						<ul class='logros'>
+						<ul className='logros'>
 							<li>
 								<span>✔</span> DB relacional y no relacional
 							</li>
@@ -78,20 +78,20 @@ export const CvFormation = () => {
 					</div>
 				</div>
 
-				<div class='formation'>
-					<div class='formation__header'>
+				<div className='formation'>
+					<div className='formation__header'>
 						<Me />
 						<h3>Autodidacta</h3>
 					</div>
 
-					<div class='formation__body'>
-						<p class='body__info'>
+					<div className='formation__body'>
+						<p className='body__info'>
 							Me apasiona la tecnología y me considero una persona autodidacta.
 						</p>
 
-						<div class='h4'>Mis logros</div>
+						<div className='h4'>Mis logros</div>
 
-						<ul class='logros'>
+						<ul className='logros'>
 							<li>
 								<span>✔</span> HTML5
 							</li>

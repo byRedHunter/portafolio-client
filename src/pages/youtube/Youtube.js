@@ -25,16 +25,10 @@ const Youtube = () => {
 				>
 					enlace
 				</a>{' '}
-				para que puedas visitar el canal. .
+				para que puedas visitar el canal.
 			</p>
 
 			<Videos />
-
-			<div className='youtube-action'>
-				<button className='button button-primary button-youtube'>
-					Ver más
-				</button>
-			</div>
 		</section>
 	)
 }

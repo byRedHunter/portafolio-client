@@ -3,9 +3,9 @@ import React from 'react'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import 'react-lazy-load-image-component/src/effects/blur.css'
 
-export const Video = ({ video }) => {
+export const Video = ({ video, innerRef }) => {
 	return (
-		<article className='video'>
+		<article className='video' ref={innerRef ? innerRef : null}>
 			<figure className='video-header'>
 				<LazyLoadImage
 					effect='blur'

@@ -1,31 +1,56 @@
-import React from 'react'
+import React, { useCallback, useRef, useState } from 'react'
+import { useScrolling } from '../../../hooks/useScrolling'
 
+import { Loading } from '../../components/Loading'
 import { Video } from './Video'
 
-const listVideos = [
-	{
-		id: 1,
-		image: 'https://jhonnyquispe.netlify.app/assets/images/slider-firebase.png',
-		title: 'React Gallery',
-		desc: 'Aprende como realizar una galleria con react, utilizando firebase y custom hooks.',
-		link: 'https://www.youtube.com/watch?v=Vg3-Vz8myDo',
-	},
-	{
-		id: 2,
-		image:
-			'https://cdn.pixabay.com/photo/2017/01/20/15/12/oranges-1995079__340.jpg',
-		title: 'Dark/Lith Mode con javascript',
-		desc: 'Aprende como realizar una galleria con react, utilizando firebase y custom hooks.',
-		link: 'https://www.youtube.com/watch?v=7aNAmLP38CY',
-	},
-]
-
 export const Videos = () => {
+	const [pageNumber, setPageNumber] = useState(1)
+
+	const { data, error, hasMore, loading } = useScrolling('youtube', pageNumber)
+
+	const observer = useRef()
+
+	const lastElementRef = useCallback(
+		(node) => {
+			if (loading) return
+
+			if (observer.current) observer.current.disconnect()
+
+			observer.current = new IntersectionObserver((entries) => {
+				if (entries[0].isIntersecting && hasMore) {
+					setPageNumber((page) => page + 1)
+				}
+			})
+
+			if (node) observer.current.observe(node)
+		},
+		[loading, hasMore]
+	)
+
 	return (
-		<section className='videos'>
-			{listVideos.map((video) => (
-				<Video key={video.id} video={video} />
-			))}
-		</section>
+		<>
+			{data.length > 0 && (
+				<section className='videos'>
+					{data.map((video, index) => {
+						if (data.length === index + 1) {
+							return (
+								<Video
+									innerRef={lastElementRef}
+									key={video._id}
+									video={video}
+								/>
+							)
+						} else {
+							return <Video key={video._id} video={video} />
+						}
+					})}
+				</section>
+			)}
+
+			{loading && <Loading />}
+
+			{error && <div className='text-error'>No hay videos disponibles.</div>}
+		</>
 	)
 }
