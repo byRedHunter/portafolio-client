@@ -241,3 +241,9 @@ ul {
 		transform: scale(1);
 	}
 }
+
+.text-error {
+	width: 100%;
+	text-align: center;
+	color: var(--color-secondary);
+}

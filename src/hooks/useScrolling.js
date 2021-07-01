@@ -23,6 +23,7 @@ export const useScrolling = (url, pageNumber) => {
 				setLoading(false)
 			})
 			.catch((e) => {
+				setLoading(false)
 				setError(true)
 			})
 		// eslint-disable-next-line
