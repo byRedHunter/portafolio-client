@@ -2,7 +2,6 @@ import axios from 'axios'
 import { useEffect, useState } from 'react'
 
 export const useScrolling = (url, pageNumber) => {
-	console.log(`${process.env.REACT_APP_BASE_URL}${url}`)
 	const [loading, setLoading] = useState(true)
 	const [error, setError] = useState(false)
 	const [data, setData] = useState([])
