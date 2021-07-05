@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 
 import './social.css'
 
@@ -13,49 +12,54 @@ export const Social = () => {
 	return (
 		<ul className='social'>
 			<li className='social-item'>
-				<Link
-					to='https://github.com/byRedHunter'
+				<a
+					href='https://github.com/byRedHunter'
 					target='_blank'
 					className='item-center'
+					rel='noreferrer'
 				>
 					<GitHub />
-				</Link>
+				</a>
 			</li>
 			<li className='social-item'>
-				<Link
-					to='https://www.linkedin.com/in/jhonny-quispe-navarro/'
+				<a
+					href='https://www.linkedin.com/in/jhonny-quispe-navarro/'
 					target='_blank'
 					className='item-center'
+					rel='noreferrer'
 				>
 					<LinkedIn />
-				</Link>
+				</a>
 			</li>
 			<li className='social-item'>
-				<Link
-					to='https://mail.google.com/mail/?view=cm&fs=1&to=jhonny.quispejl@gmail.com'
+				<a
+					href='https://mail.google.com/mail/?view=cm&fs=1&to=jhonny.quispejl@gmail.com'
 					target='_blank'
 					className='item-center'
+					rel='noreferrer'
 				>
 					<Email />
-				</Link>
+				</a>
 			</li>
 			<li className='social-item'>
-				<Link
-					to='https://twitter.com/byRedHunter'
+				<a
+					href='https://twitter.com/byRedHunter'
 					target='_blank'
 					className='item-center'
+					rel='noreferrer'
 				>
 					<Twitter />
-				</Link>
+				</a>
 			</li>
 			<li className='social-item'>
-				<Link
-					to='https://www.instagram.com/byreddhunter/'
+				<a
+					href='https://www.instagram.com/byreddhunter/'
 					target='_blank'
 					className='item-center'
+					rel='noreferrer'
 				>
 					<Instagram />
-				</Link>
+				</a>
 			</li>
 		</ul>
 	)
