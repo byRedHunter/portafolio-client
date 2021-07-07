@@ -86,7 +86,7 @@
 .badge-css {
 	background: #53a7dc;
 }
-.badge-js {
+.badge-javascript {
 	background: #f1de4f;
 	color: #050505;
 }
@@ -111,6 +111,7 @@
 }
 .badge-firebase {
 	background: #fcca3f;
+	color: #050505;
 }
 .work-content {
 	bottom: 0;

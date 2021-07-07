@@ -5,9 +5,9 @@ import 'react-lazy-load-image-component/src/effects/blur.css'
 import Send from '../../components/svg/Send'
 import GitHub from '../../components/svg/GitHub'
 
-export const Work = ({ work }) => {
+export const Work = ({ work, innerRef }) => {
 	return (
-		<article className='work'>
+		<article className='work' ref={innerRef ? innerRef : null}>
 			<figure className='work-figure'>
 				<LazyLoadImage
 					effect='blur'
@@ -24,8 +24,11 @@ export const Work = ({ work }) => {
 				<h4 className='work-title'>{work.title}</h4>
 				<ul className='work-badges'>
 					{work.badges.map((badge) => (
-						<li key={badge._id} className={`badge badge-${badge.name}`}>
-							{badge.name.toUpperCase()}
+						<li
+							key={badge._id}
+							className={`badge badge-${badge.title.toLowerCase()}`}
+						>
+							{badge.title.toUpperCase()}
 						</li>
 					))}
 				</ul>
