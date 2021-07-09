@@ -57,7 +57,7 @@ export const Works = () => {
 
 	return (
 		<>
-			{filteredData.length > 0 && (
+			{data.length > 0 && (
 				<section className='works'>
 					{filteredData.map((work, index) => {
 						if (filteredData.length === index + 1) {
