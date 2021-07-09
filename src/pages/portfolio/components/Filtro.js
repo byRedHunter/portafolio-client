@@ -1,4 +1,5 @@
 import React from 'react'
+import { useFilter } from '../../../store/useFilter'
 import { changeItemFilter } from '../../../utils/portfolio'
 
 const labels = [
@@ -8,7 +9,7 @@ const labels = [
 	},
 	{
 		id: 2,
-		label: 'JS',
+		label: 'JavaScript',
 	},
 	{
 		id: 3,
@@ -37,6 +38,8 @@ const labels = [
 ]
 
 export const Filtro = () => {
+	const { changeFilter } = useFilter((state) => state)
+
 	return (
 		<ul className='filter'>
 			{labels.map((item) => (
@@ -45,7 +48,10 @@ export const Filtro = () => {
 					className={
 						item.label === 'Todos' ? 'filter-item active' : 'filter-item'
 					}
-					onClick={(e) => changeItemFilter(e)}
+					onClick={(e) => {
+						changeItemFilter(e)
+						changeFilter(e.target.textContent)
+					}}
 				>
 					{item.label}
 				</li>

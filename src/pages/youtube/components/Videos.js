@@ -50,7 +50,11 @@ export const Videos = () => {
 
 			{loading && <Loading />}
 
-			{error && <div className='text-error'>No hay videos disponibles.</div>}
+			{error && (
+				<div className='text-error'>
+					Error en el servidor, no se pueden cargar los videos.
+				</div>
+			)}
 		</>
 	)
 }
