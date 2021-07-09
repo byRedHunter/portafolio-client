@@ -1,4 +1,4 @@
-import React, { useCallback, useMemo, useRef, useState } from 'react'
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { useScrolling } from '../../../hooks/useScrolling'
 import { useFilter } from '../../../store/useFilter'
 
@@ -6,9 +6,8 @@ import { Loading } from '../../components/Loading'
 import { Work } from './Work'
 
 export const Works = () => {
-	const { itemFilter } = useFilter((state) => state)
+	const { itemFilter, changeFilter } = useFilter((state) => state)
 	const [pageNumber, setPageNumber] = useState(1)
-	const [messageFiltered, setMessageFiltered] = useState('')
 
 	const { data, error, hasMore, loading } = useScrolling(
 		'portfolio',
@@ -35,7 +34,6 @@ export const Works = () => {
 	)
 
 	const filteredData = useMemo(() => {
-		setMessageFiltered('')
 		const filtered = []
 		if (itemFilter === 'Todos') return data
 
@@ -50,10 +48,20 @@ export const Works = () => {
 			return filtered
 		}
 
-		setMessageFiltered('No hay coincidencias.')
 		return []
 		// eslint-disable-next-line
 	}, [itemFilter])
+
+	useEffect(() => {
+		if (loading) return
+
+		changeFilter('Todos')
+		// eslint-disable-next-line
+	}, [loading])
+
+	if (!loading && filteredData.length === 0) {
+		return <p className='text-error'>No hay coincidencias en el filtro.</p>
+	}
 
 	return (
 		<>
@@ -70,8 +78,6 @@ export const Works = () => {
 					})}
 				</section>
 			)}
-
-			<div className='text-error'>{messageFiltered}</div>
 
 			{loading && <Loading />}
 
