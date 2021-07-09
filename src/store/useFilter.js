@@ -3,7 +3,7 @@ import { combine, devtools } from 'zustand/middleware'
 
 export const useFilter = create(
 	devtools(
-		combine({ itemFilter: 'Todos' }, (set) => ({
+		combine({ itemFilter: 'JavaScript' }, (set) => ({
 			changeFilter: (newItem) =>
 				set((state) => ({ ...state, itemFilter: newItem })),
 		}))

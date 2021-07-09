@@ -35,6 +35,26 @@ const labels = [
 		id: 8,
 		label: 'CSS',
 	},
+	{
+		id: 9,
+		label: 'Firebase',
+	},
+	{
+		id: 10,
+		label: 'SASS',
+	},
+	{
+		id: 11,
+		label: 'Figma',
+	},
+	{
+		id: 12,
+		label: 'MongoDB',
+	},
+	{
+		id: 13,
+		label: 'MySql',
+	},
 ]
 
 export const Filtro = () => {
