@@ -2,7 +2,6 @@ import React from 'react'
 
 import './portfolio.css'
 
-import { Filtro } from './components/Filtro'
 import { Works } from './components/Works'
 
 const Portfolio = () => {
@@ -26,8 +25,6 @@ const Portfolio = () => {
 				</a>
 				.
 			</p>
-
-			<Filtro />
 
 			<Works />
 		</section>
