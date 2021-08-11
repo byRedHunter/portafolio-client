@@ -81,11 +81,22 @@
 .badge-express {
 	background: #eee;
 }
-.badge-html {
+.badge-html,
+.badge-html5 {
 	background: #de6e3c;
 }
-.badge-css {
+.badge-css,
+.badge-css3 {
 	background: #53a7dc;
+}
+.badge-figma {
+	background: #a259ff;
+}
+.badge-angular {
+	background: #b52e31;
+}
+.badge-tailwind {
+	background: #07b6d5;
 }
 .badge-javascript {
 	background: #f1de4f;

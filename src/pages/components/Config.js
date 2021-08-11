@@ -24,7 +24,7 @@ const darkTheme = {
 	'--color-primary-50': 'rgba(255, 81, 0, 0.5)',
 	'--color-secondary': '#9f5eff',
 	'--color-bg': '#080915',
-	'--color-bg-sidebar': '#18192a',
+	'--color-bg-sidebar': '#030307',
 }
 
 export const Config = () => {
