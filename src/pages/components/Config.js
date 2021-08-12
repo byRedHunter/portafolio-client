@@ -17,7 +17,7 @@ const lightTheme = {
 }
 
 const darkTheme = {
-	'--color-light': '#101010',
+	'--color-light': '#0f0520',
 	'--color-dark': '#fbfbfb',
 	'--color-dark-50': 'rgba(251, 251, 251, 0.5)',
 	'--color-primary': '#ff5200',

@@ -8,20 +8,23 @@ import GitHub from '../../components/svg/GitHub'
 export const Work = ({ work, innerRef }) => {
 	return (
 		<article className='work' ref={innerRef ? innerRef : null}>
-			<figure className='work-figure'>
-				<LazyLoadImage
-					effect='blur'
-					src={work.image}
-					alt={work.title}
-					height='100%'
-					width='100%'
-					style={{ objectFit: 'cover' }}
-					placeholderSrc={process.env.PUBLIC_URL + '/placeholder.svg'}
-				/>
-			</figure>
+			<div className='work-image'>
+				<figure className='work-figure'>
+					<LazyLoadImage
+						effect='blur'
+						src={work.image}
+						alt={work.title}
+						height='100%'
+						width='100%'
+						style={{ objectFit: 'cover' }}
+						placeholderSrc={process.env.PUBLIC_URL + '/placeholder.svg'}
+					/>
+				</figure>
+			</div>
 
-			<div className='work-header'>
-				<h4 className='work-title'>{work.title}</h4>
+			<div className='work-content'>
+				<h3>{work.title}</h3>
+
 				<ul className='work-badges'>
 					{work.badges.map((badge) => (
 						<li
@@ -32,11 +35,10 @@ export const Work = ({ work, innerRef }) => {
 						</li>
 					))}
 				</ul>
-			</div>
 
-			<div className='work-content'>
-				<p className='work-desc'>{work.desc}</p>
-				<div className='work-links'>
+				<p>{work.desc}</p>
+
+				<div className='work-actions'>
 					<a
 						href={work.preview}
 						className='button'
