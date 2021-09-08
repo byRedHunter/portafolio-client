@@ -22,6 +22,7 @@ import Heroku from '../../components/svg/Heroku'
 import VsCode from '../../components/svg/VsCode'
 import Figma from '../../components/svg/Figma'
 import Cloudinary from '../../components/svg/Cloudinary'
+import TypeScrypt from '../../components/svg/TypeScript'
 
 export const ListTechs = () => {
 	return (
@@ -55,11 +56,12 @@ export const ListTechs = () => {
 			<article className='tech'>
 				<div className='tech-icons'>
 					<JavaScript />
+					<TypeScrypt />
 				</div>
-				<h4 className='tech-title'>JavaScript</h4>
+				<h4 className='tech-title'>JavaScript & TypeScript</h4>
 				<p className='tech-desc'>
 					Hago de mis aplicaciones dinámicos y generar una interaccion agrabadle
-					para el usuario.
+					para el usuario. Uso TypeScript al desarrollar con React.
 				</p>
 			</article>
 
