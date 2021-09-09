@@ -4,8 +4,8 @@ function TypeScrypt(props) {
 	return (
 		<svg
 			xmlns='http://www.w3.org/2000/svg'
-			width={256}
-			height={256}
+			width={30}
+			height={30}
 			preserveAspectRatio='xMidYMid'
 			{...props}
 		>
